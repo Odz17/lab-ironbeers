@@ -1,0 +1,13 @@
+<div class="beer-container">
+    {{#each beers}}
+            <div class="beer">
+             <img src="{{image_url}}" alt="{{name}} Image" class="beer-image">
+                 <div class="beer-details">
+                     <h2>{{name}}</h2>
+                     <p class="opacity">{{tagline}}</p>
+                     <p class="descripcion-ancho">{{description}}</p>
+                </div>
+         {{ beerpartial }}
+             </div>
+    {{/each}}
+</div>
